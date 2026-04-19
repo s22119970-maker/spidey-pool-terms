@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://127.0.0.1:5500/arquivor.html/privacidade.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade | Spidey Pool Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 2px solid #ef4444;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ef4444, #3b82f6);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+        }
+
+        .logo-text h1 {
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .logo-text span {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 15px;
+            border: 1px solid #334155;
+            border-left: 4px solid #ef4444;
+        }
+
+        .hero h2 {
+            color: #ef4444;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .data-atualizacao {
+            display: inline-block;
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid #ef4444;
+            color: #fca5a5;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-family: monospace;
+        }
+
+        .secao {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
+
+        .secao:hover {
+            transform: translateY(-2px);
+            border-color: #ef4444;
+        }
+
+        .secao-titulo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .numero {
+            background: linear-gradient(135deg, #ef4444, #3b82f6);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .secao h3 {
+            color: #f8fafc;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .secao p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .secao ul {
+            margin-left: 20px;
+            color: #cbd5e1;
+        }
+
+        .secao li {
+            margin-bottom: 8px;
+        }
+
+        .destaque {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            color: #bfdbfe;
+        }
+
+        .aviso {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            color: #fecaca;
+        }
+
+        .info-box {
+            background: rgba(16, 185, 129, 0.1);
+            border-left: 4px solid #10b981;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            color: #a7f3d0;
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 2px solid #334155;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        footer p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .copyright {
+            color: #64748b;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .creator {
+            background: linear-gradient(to right, #ef4444, #3b82f6);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #f472b6;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #3b82f6;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        .back-link:hover {
+            border-bottom-color: #3b82f6;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .hero h2 {
+                font-size: 24px;
+            }
+            
+            .secao {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">🕷️</div>
+            <div class="logo-text">
+                <h1>Spidey Pool</h1>
+                <span>Sistema de Gestão para Discord</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="hero">
+        <h2>Política de Privacidade</h2>
+        <p>Comprometidos com a transparência e proteção dos seus dados.</p>
+        <span class="data-atualizacao">Vigente desde: 19 de Abril de 2025</span>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">1</div>
+            <h3>Informações Coletadas</h3>
+        </div>
+        <p>O Spidey Pool coleta apenas dados necessários para o funcionamento:</p>
+        <ul>
+            <li><strong>IDs de Usuários Discord:</strong> Identificadores únicos para reconhecer usuários</li>
+            <li><strong>Nomes de Registro:</strong> Fornecidos voluntariamente nos formulários</li>
+            <li><strong>Registros de Ponto:</strong> Entradas e saídas no sistema de bate-ponto</li>
+            <li><strong>Cargos:</strong> Configurações de hierarquia definidas pelos admins</li>
+            <li><strong>Histórico de Tickets:</strong> Registros de atendimento</li>
+        </ul>
+        <div class="info-box">
+            <strong>Importante:</strong> Não coletamos senhas, e-mails, dados bancários ou informações pessoais sensíveis fora do Discord.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">2</div>
+            <h3>Uso dos Dados</h3>
+        </div>
+        <p>As informações são utilizadas estritamente para:</p>
+        <ul>
+            <li>Gerenciar registros e liberações de membros</li>
+            <li>Controlar pontos e expedientes</li>
+            <li>Manter histórico de atendimentos</li>
+            <li>Gerenciar hierarquia do servidor</li>
+            <li>Emitir relatórios administrativos (apenas staff)</li>
+        </ul>
+        <div class="destaque">
+            Seus dados nunca serão vendidos, compartilhados com terceiros ou usados para publicidade.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">3</div>
+            <h3>Armazenamento e Segurança</h3>
+        </div>
+        <p>Dados armazenados localmente no servidor do bot:</p>
+        <ul>
+            <li>Arquivos JSON com criptografia básica</li>
+            <li>Backups automáticos diários</li>
+            <li>Acesso restrito ao proprietário e administradores</li>
+            <li>Sem servidores externos ou cloud de terceiros</li>
+        </ul>
+        <div class="aviso">
+            <strong>Nota:</strong> Recomendamos que administradores mantenham cópias de segurança regulares do arquivo <code>database.json</code>.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">4</div>
+            <h3>Retenção e Exclusão</h3>
+        </div>
+        <p>Políticas de retenção de dados:</p>
+        <ul>
+            <li><strong>Dados ativos:</strong> Mantidos enquanto o usuário estiver no servidor</li>
+            <li><strong>Dados históricos:</strong> Preservados por 90 dias após saída do usuário</li>
+            <li><strong>Logs de moderação:</strong> Mantidos por 1 ano para auditoria</li>
+        </ul>
+        <div class="info-box">
+            <strong>Direito ao esquecimento:</strong> Solicite a exclusão completa dos seus dados entrando em contato com a administração.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">5</div>
+            <h3>Compartilhamento</h3>
+        </div>
+        <p>O Spidey Pool <strong>não compartilha dados</strong> com:</p>
+        <ul>
+            <li>Empresas de publicidade ou marketing</li>
+            <li>Serviços de análise de terceiros</li>
+            <li>Outros bots ou plataformas externas</li>
+            <li>Indivíduos fora da equipe administrativa</li>
+        </ul>
+        <p>Exceção: Dados podem ser divulgados se exigido por lei ou ordem judicial.</p>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">6</div>
+            <h3>Seus Direitos</h3>
+        </div>
+        <p>Você tem direito a:</p>
+        <ul>
+            <li><strong>Acessar:</strong> Solicitar cópia dos dados sobre você</li>
+            <li><strong>Corrigir:</strong> Pedir correção de informações imprecisas</li>
+            <li><strong>Excluir:</strong> Solicitar remoção completa dos dados</li>
+            <li><strong>Portabilidade:</strong> Receber dados em formato legível</li>
+        </ul>
+        <div class="destaque">
+            Para exercer esses direitos, contate a staff do servidor ou o desenvolvedor Predor.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">7</div>
+            <h3>Cookies e Rastreamento</h3>
+        </div>
+        <p>O bot não utiliza cookies ou tecnologias de rastreamento web. Os únicos registros mantidos são técnicos necessários para o funcionamento (IDs de mensagens para painéis e logs de interações para segurança).</p>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">8</div>
+            <h3>Menores de Idade</h3>
+        </div>
+        <p>O Spidey Pool não é direcionado a menores de 13 anos (idade mínima do Discord). Se identificarmos processamento de dados de menores sem consentimento adequado, removeremos essas informações imediatamente.</p>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">9</div>
+            <h3>Alterações na Política</h3>
+        </div>
+        <p>Podemos atualizar esta política periodicamente. Alterações significativas serão notificadas:</p>
+        <ul>
+            <li>No canal de anúncios do servidor de suporte</li>
+            <li>Ao administradores dos servidores afetados</li>
+            <li>Com data de vigência indicada no documento</li>
+        </ul>
+        <div class="aviso">
+            O uso contínuo do bot após alterações constitui aceitação da nova política.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">10</div>
+            <h3>Contato</h3>
+        </div>
+        <p>Responsável pelo tratamento de dados:</p>
+        <div class="destaque">
+            <strong>Desenvolvedor:</strong> Predor<br>
+            <strong>Suporte:</strong> Através do servidor oficial ou sistema de tickets
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="http://127.0.0.1:5500/arquivor.html/termos.html" class="back-link">← Voltar aos Termos de Serviço</a>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-logo">🕷️</div>
+        <h3>Spidey Pool</h3>
+        <p>Transparência e segurança em primeiro lugar</p>
+        <div class="copyright">
+            © 2025 <span class="creator">Spidey Pool</span> by Predor. Todos os direitos reservados.<br>
+            <a href="http://127.0.0.1:5500/arquivor.html/termos.html" style="color: #64748b; text-decoration: none; margin-right: 15px;">Termos de Serviço</a>
+            <a href="http://127.0.0.1:5500/arquivor.html/privacidade.html" style="color: #64748b; text-decoration: none;">Política de Privacidade</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
