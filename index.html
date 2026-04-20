@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Serviço | Spidey Pool Bot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+            color: #f8fafc;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: rgba(15, 23, 42, 0.95);
+            border-bottom: 2px solid #3b82f6;
+            padding: 20px 0;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #ef4444, #3b82f6);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        }
+
+        .logo-text h1 {
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .logo-text span {
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(30, 41, 59, 0.7);
+            border-radius: 15px;
+            border: 1px solid #334155;
+        }
+
+        .hero h2 {
+            color: #3b82f6;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .data-atualizacao {
+            display: inline-block;
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid #3b82f6;
+            color: #60a5fa;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-family: monospace;
+        }
+
+        .secao {
+            background: rgba(30, 41, 59, 0.8);
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.2s;
+        }
+
+        .secao:hover {
+            transform: translateY(-2px);
+            border-color: #3b82f6;
+        }
+
+        .secao-titulo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #334155;
+        }
+
+        .numero {
+            background: linear-gradient(135deg, #ef4444, #3b82f6);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .secao h3 {
+            color: #f8fafc;
+            font-size: 22px;
+            margin: 0;
+        }
+
+        .secao p {
+            color: #cbd5e1;
+            margin-bottom: 15px;
+        }
+
+        .secao ul {
+            margin-left: 20px;
+            color: #cbd5e1;
+        }
+
+        .secao li {
+            margin-bottom: 8px;
+        }
+
+        .destaque {
+            background: rgba(59, 130, 246, 0.1);
+            border-left: 4px solid #3b82f6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            color: #bfdbfe;
+        }
+
+        .aviso {
+            background: rgba(239, 68, 68, 0.1);
+            border-left: 4px solid #ef4444;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            color: #fecaca;
+        }
+
+        footer {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 2px solid #334155;
+            padding: 40px 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        footer p {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .copyright {
+            color: #64748b;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        .creator {
+    background: linear-gradient(to right, #ef4444, #3b82f6);
+    background-clip: text;           /* Propriedade padrão */
+    -webkit-background-clip: text;    /* Para navegadores WebKit */
+    -webkit-text-fill-color: transparent; /* Deixa o texto transparente para ver o gradiente */
+    font-weight: bold;
+}
+
+
+        code {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            color: #f472b6;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .hero h2 {
+                font-size: 24px;
+            }
+            
+            .secao {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <div class="logo-icon">🕷️</div>
+            <div class="logo-text">
+                <h1>Spidey Pool</h1>
+                <span>Sistema de Gestão para Discord</span>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="hero">
+        <h2>Termos de Serviço</h2>
+        <p>Leia atentamente as regras e condições de uso antes de utilizar o bot.</p>
+        <span class="data-atualizacao">Última atualização: 18 de Abril de 2026</span>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">1</div>
+            <h3>Aceitação dos Termos</h3>
+        </div>
+        <p>Ao utilizar o bot Spidey Pool, você concorda em cumprir estes Termos de Serviço e todas as regras aplicáveis do Discord. Se você não concordar com algum destes termos, não utilize o bot.</p>
+        <div class="destaque">
+            O uso do bot implica em aceitação automática destes termos e da política de privacidade associada.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">2</div>
+            <h3>Uso do Serviço</h3>
+        </div>
+        <p>O Spidey Pool é um bot de gestão e administração para servidores Discord, oferecendo funcionalidades como:</p>
+        <ul>
+            <li>Sistema de registro e liberação de membros (PDD)</li>
+            <li>Controle de ponto e bate-ponto</li>
+            <li>Gerenciamento de hierarquia de cargos</li>
+            <li>Sistema de blacklist</li>
+            <li>Fichas de registro</li>
+        </ul>
+        <div class="aviso">
+            <strong>Importante:</strong> O bot deve ser utilizado apenas para fins legítimos de gestão comunitária. Qualquer uso para spam, abuso ou violação dos Termos de Serviço do Discord resultará em banimento permanente.
+        </div>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">3</div>
+            <h3>Dados e Privacidade</h3>
+        </div>
+        <p>O bot armazena localmente em seu servidor as seguintes informações:</p>
+        <ul>
+            <li>Identificadores de usuários do Discord (IDs)</li>
+            <li>Nomes de registro inseridos nos formulários</li>
+            <li>Registros de tempo e pontos</li>
+            <li>Cargos e permissões configuradas</li>
+        </ul>
+        <p>Estes dados são armazenados em um banco de dados local e não são compartilhados com terceiros. Não coletamos informações pessoais sensíveis como senhas, e-mails ou dados de pagamento.</p>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">4</div>
+            <h3>Limitações de Responsabilidade</h3>
+        </div>
+        <p>O criador do bot não se responsabiliza por:</p>
+        <ul>
+            <li>Perda de dados devido a falhas técnicas ou exclusão acidental</li>
+            <li>Abuso do sistema por parte de administradores dos servidores</li>
+            <li>Indisponibilidade temporária do serviço</li>
+            <li>Danos causados por uso indevido das ferramentas de moderação</li>
+        </ul>
+        <p>Recomenda-se fazer backups periódicos do arquivo <code>database.json</code> para evitar perda de dados.</p>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">5</div>
+            <h3>Modificações e Encerramento</h3>
+        </div>
+        <p>Reservamo-nos o direito de:</p>
+        <ul>
+            <li>Modificar estes termos a qualquer momento, com notificação prévia</li>
+            <li>Encerrar o serviço para servidores específicos que violarem as regras</li>
+            <li>Atualizar o bot com novas funcionalidades ou correções de segurança</li>
+            <li>Limitar o uso em caso de sobrecarga dos servidores</li>
+        </ul>
+    </div>
+
+    <div class="secao">
+        <div class="secao-titulo">
+            <div class="numero">6</div>
+            <h3>Contato e Suporte</h3>
+        </div>
+        <p>Para suporte técnico, reportar erros ou solicitar remoção de dados, entre em contato através do servidor de suporte oficial.</p>
+        <div class="destaque">
+            Desenvolvido por Predor (oliveiraxxr_xl) | Spidey Pool Bot 
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="footer-logo">🕷️</div>
+        <h3>Spidey Pool</h3>
+        <p>Sistema completo de gestão para comunidades Discord</p>
+        <div class="copyright">
+            &copy; 2025 <span class="creator">Spidey Pool</span> by Predor. Todos os direitos reservados.<br>
+            Não afiliado oficialmente com Discord Inc.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
